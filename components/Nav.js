@@ -1,11 +1,12 @@
 import { Flex, NavLink } from "theme-ui";
 import Link from "next/link";
+import  theme  from '../theme'
 
 export default function Nav() {
   return (
     <>
       <div className="flex">
-        <Flex as="nav">
+        <Flex as="nav"> 
           <Link href="/">
             <NavLink p={4}>Home</NavLink>
           </Link>
@@ -22,7 +23,10 @@ export default function Nav() {
       <style jsx>
         {`
           .flex {
-            font-size: 30px;
+            font-size: 28px;
+            font-weight: bold;
+            font-family: ${theme.fonts.body};
+            margin-bottom: 5rem;
           }
         `}
       </style>

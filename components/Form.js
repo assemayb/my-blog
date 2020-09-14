@@ -1,5 +1,4 @@
-import { Field, Button, Heading , Textarea, Container} from "theme-ui";
-import {  } from 'theme-ui'
+import { Field, Message, Button, Heading, Textarea, Container } from "theme-ui";
 
 export default function Form() {
   const handleChange = (inputVal) => {
@@ -7,27 +6,28 @@ export default function Form() {
   };
   return (
     <div style={styles.inputForm}>
-      <Container >
-      <Heading marginY="20px" as='h2'>Write to me if you want!</Heading>
-      <Field label="Email" name="email" defaultValue="" />
-      <Field
-        label="Your Name"
-        name="name"
-        defaultValue=""
-        onChange={(e) => handleChange(e.target.value)}
-      />
+      <Container>
+        {/* <Message variant="success" color="yellowDark">This is just a message for someone to read</Message> */}
 
-      <Textarea
-      p={1} 
-      m={1}
-        defaultValue='Write a Message to me....'
-        rows={7}
-      />
+        <Heading marginY="20px" as="h2">
+          Write to me if you want!
+        </Heading>
+        <Field label="Email" name="email" defaultValue="" />
+        <Field
+          label="Your Name"
+          name="name"
+          defaultValue=""
+          onChange={(e) => handleChange(e.target.value)}
+        />
 
+        <Textarea
+          p={1}
+          m={1}
+          defaultValue="Write a Message to me...."
+          rows={7}
+        />
       </Container>
       <Button> send email</Button>
-
-      
     </div>
   );
 }

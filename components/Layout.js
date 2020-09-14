@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>MY Blog</title>
+        <title>My Blog</title>
       </Head>
 
       <main>
