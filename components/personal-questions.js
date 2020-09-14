@@ -1,6 +1,7 @@
 import { Container, Text, Box, Heading, Close } from "theme-ui";
+import { customHeading } from "../theme";
 
-export default function ({ setShowQuestions }) {
+export default function Questions({ setShowQuestions, showCloseButton }) {
   const closeQuestionsSection = () => {
     setShowQuestions(false);
   };
@@ -21,15 +22,50 @@ export default function ({ setShowQuestions }) {
           position: "relative",
         }}
       >
-        <div id="close-icon" onClick={closeQuestionsSection}>
-          <Close />
-        </div>
-        <Text sx={{ fontSize: 5, fontWeight: "bold" }}>Personal Questions</Text>
-        <p> - Question</p>
-        <p> Answer</p>
+        {showCloseButton == true && (
+          <div id="close-icon" onClick={closeQuestionsSection}>
+            <Close />
+          </div>
+        )}
+        <Text sx={customHeading(false)}>Personal Questions</Text>
 
-        <p> - Question</p>
-        <p> Answer</p>
+        <div className="questions-section">
+          <div>
+            <h1> - What languages I am good at?</h1>
+            <h4> Python, Javascript, C++, Golang. </h4>
+          </div>
+
+          <div>
+            <h1> - My Favorite Language? </h1>
+            <h4>
+              {" "}
+              Python is my favorite because of its simple syntax and it seems
+              more intuitive to me than any other one.{" "}
+            </h4>
+          </div>
+
+          <div>
+            <h2> - My Favorite technologies to work with?</h2>
+            <h4>
+              {" "}
+              React for the frontend, and Django for the backend, but Express js
+              is amazing as well and has more utilities and also faster with
+              API’s.
+            </h4>
+          </div>
+
+          <div>
+            <h2>- What Language to suggest for beginners?</h2>
+            <h4>
+              Javascript, for sure. JS is by far the most powerful and easiest
+              language now to build almost any type of applications with.
+            </h4>
+          </div>
+          <div>
+            <h2>- When did I start to code?</h2>
+            <h4>Nearly 3.5 years ago.</h4>
+          </div>
+        </div>
       </Container>
       <style jsx>{`
         #close-icon {
@@ -40,6 +76,13 @@ export default function ({ setShowQuestions }) {
         }
         #close-icon:hover {
           color: red;
+        }
+        .questions-section {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          padding-left: 4rem;
+          padding-right: 2rem;
         }
       `}</style>
     </>

@@ -1,32 +1,56 @@
-import React from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Form from "../components/Form";
 
-import { Button, Field } from "theme-ui";
+import { Divider } from "theme-ui";
 import Layout from "../components/Layout";
+import Questions from "../components/personal-questions";
+import Blogs from "../components/Blogs";
 
-export default function index() {
+import blogs from "../data/index-page-data";
+
+export default function index({ allBlogs }) {
+  const [showQuestions, setShowQuestions] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowQuestions((prevState) => !prevState);
+    }, 800);
+  }, []);
+
   return (
     <Layout>
       <>
-        <section>
-          <div>this is the blogs section</div>
-        </section>
-
+        <Blogs allBlogs={allBlogs} />
+        <Divider />
+        {showQuestions && (
+          <Questions
+            setShowQuestions={setShowQuestions}
+            showCloseButton={true}
+          />
+        )}
+        <Divider />
         <div className="form">
-        <Form />
+          <Form />
         </div>
-        
-        <style jsx>
-            {`
 
+        <style jsx>
+          {`
             .form {
               padding: 3rem;
               margin-top: 4rem;
-            }`
-
             }
+          `}
         </style>
       </>
     </Layout>
   );
+}
+
+export async function getStaticProps() {
+  const allBlogs = blogs;
+  return {
+    props: {
+      allBlogs,
+    },
+  };
 }

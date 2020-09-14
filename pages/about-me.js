@@ -1,13 +1,63 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Question from "../components/personal-questions";
+import { Container } from "theme-ui";
+import theme from "../theme";
 
-export default function () {
+export default function About() {
   return (
     <Layout>
       <Head>
         <title>About</title>
       </Head>
-      <h1>About me</h1>
+      <div className="main-container">
+        <Container
+          bg="blue"
+          p={4}
+          mt={3}
+          mb={3}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            borderBottomLeftRadius: "20px",
+            borderBottomRightRadius: "20px",
+            position: "relative",
+          }}
+        >
+          <div className="info">
+            <p>
+              Hey there, I am Assem Sayed, I am computer science student and
+              will be a senior in action starting next fall. My passion is web
+              development and building applications in general. My current goal
+              is to build some type of a framework or a library for developers
+              and contribute to the software industry and also gain deep
+              understanding of the technologies I am using.
+            </p>
+          </div>
+        </Container>
+        <Question showCloseButton={false}/>
+      </div>
+      <style jsx>
+        {`
+          .main-container {
+            padding: 2rem;
+            margin-top: 1rem;
+          }
+          .info {
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 90px;
+          }
+          .info p {
+            font-size: 25px;
+            font-family: ${theme.fonts.heading};
+            text-align: center;
+            font-weight: bold
+          }
+        `}
+      </style>
     </Layout>
   );
 }

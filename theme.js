@@ -257,7 +257,9 @@ export default {
       textTransform: "uppercase",
       letterSpacing: "0.2em",
       "&:hover": {
-        bg: "primaryLight",
+        bg: "blueDark",
+        color: "wheat",
+        cursor: "pointer",
       },
     },
   },
@@ -335,3 +337,20 @@ export default {
     },
   },
 };
+
+export const customHeading = (isBlue) => {
+  if(isBlue == true){ 
+      return{
+        fontSize: "50px",
+        color: "cadetblue",
+      fontFamily: "monospace",
+      }
+  } else {
+    return{
+      fontSize: "50px",
+      fontWeight: 'bold',
+      color: "whitesmoke",
+      fontFamily: "monospace",
+    }
+  }
+}

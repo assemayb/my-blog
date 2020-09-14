@@ -1,23 +1,35 @@
 import { Field, Message, Button, Heading, Textarea, Container } from "theme-ui";
+import theme from "../theme";
 
 export default function Form() {
-  const handleChange = (inputVal) => {
-    console.log(inputVal);
+  const handleChange = (inputName, inputVal) => {
+    console.log(inputName, inputVal);
   };
   return (
     <div style={styles.inputForm}>
       <Container>
         {/* <Message variant="success" color="yellowDark">This is just a message for someone to read</Message> */}
 
-        <Heading marginY="20px" as="h2">
+        <h2
+          style={{
+            fontSize: "35px",
+            color: "cadetblue",
+            fontFamily: "monospace",
+          }}
+        >
           Write to me if you want!
-        </Heading>
-        <Field label="Email" name="email" defaultValue="" />
+        </h2>
+        <Field
+          label="Email"
+          name="email"
+          defaultValue=""
+          onChange={(e) => handleChange(e.target.name, e.target.value)}
+        />
         <Field
           label="Your Name"
           name="name"
           defaultValue=""
-          onChange={(e) => handleChange(e.target.value)}
+          onChange={(e) => handleChange(e.target.name, e.target.value)}
         />
 
         <Textarea
