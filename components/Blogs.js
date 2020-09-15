@@ -19,7 +19,8 @@ const BlogItem = ({ data }) => {
             width: 75%;
             cursor: pointer;
             margin-top: 1rem;
-            background-color: #e2e2e0;
+            // background-color: #e2e2e0;
+            background-color: #fefbd8
             padding: 0.5rem;
             text-align: center;
             font-size: 20px;
@@ -29,8 +30,8 @@ const BlogItem = ({ data }) => {
           }
           .blog-item:hover {
             transition: 0.2s;
-            background-color: cadetblue;
-            color: white;
+            background-color: #2F4F4F;
+            color: SpringGreen;
           }
         `}
       </style>

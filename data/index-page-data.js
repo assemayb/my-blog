@@ -6,21 +6,17 @@ const Blogs = [
   },
 
   {
+    title: "Blog One",
+    createdAt: `${new Date(Date.now)}`,
+    slug: "blog-one",
+  },
+
+  {
     title: "Blog Two",
     createdAt: `${new Date(Date.now)}`,
     slug: "blog-two",
   },
-  // {
-  //   title: "Blog Three",
-  //   createdAt: `${new Date(Date.now)}`,
-  //   slug: "blog-three",
-  // },
-  // {
-  //   title: "Blog Four",
-  //   createdAt: `${new Date(Date.now)}`,
-  //   slug: "blog-four",
-  // },
-  
+
 ];
 
 export default Blogs;

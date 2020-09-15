@@ -13,7 +13,7 @@ export default function Form() {
         <h2
           style={{
             fontSize: "35px",
-            color: "cadetblue",
+            color: "#2F4F4F",
             fontFamily: "monospace",
           }}
         >

@@ -21,8 +21,8 @@ export default function About() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            borderBottomLeftRadius: "20px",
-            borderBottomRightRadius: "20px",
+            borderTopLeftRadius: "40px",
+            borderTopRightRadius: "40px",
             position: "relative",
           }}
         >
@@ -42,19 +42,28 @@ export default function About() {
       <style jsx>
         {`
           .main-container {
-            padding: 2rem;
+            padding: 1rem;
             margin-top: 1rem;
           }
           .info {
             padding: 1rem;
             margin: 1rem;
             border-radius: 90px;
+            border-left-top-radius: 60px;
           }
           .info p {
             font-size: 25px;
             font-family: ${theme.fonts.heading};
             text-align: center;
             font-weight: bold
+          }
+          .info:hover {
+            transition: 0.6s;
+            background: linear-gradient(90deg, SpringGreen, black, SpringGreen);
+            text-shadow: none;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
           }
         `}
       </style>

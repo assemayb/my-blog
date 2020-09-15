@@ -84,6 +84,15 @@ export default function Questions({ setShowQuestions, showCloseButton }) {
           padding-left: 4rem;
           padding-right: 2rem;
         }
+        .questions-section:hover {
+          transition: 0.6s;
+          background: linear-gradient(90deg, SpringGreen, black, SpringGreen);
+          text-shadow: none;
+          -webkit-text-fill-color: transparent;
+          -webkit-background-clip: text;
+          background-clip: text;
+        }
+        
       `}</style>
     </>
   );

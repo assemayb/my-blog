@@ -257,8 +257,8 @@ export default {
       textTransform: "uppercase",
       letterSpacing: "0.2em",
       "&:hover": {
-        bg: "blueDark",
-        color: "wheat",
+        bg: "#2F4F4F",
+        color: "SpringGreen",
         cursor: "pointer",
       },
     },
