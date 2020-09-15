@@ -24,7 +24,7 @@ export default function Layout({ children }) {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 2rem;
+            padding: 3rem;
             margin-top: 1rem;
           }
         `}

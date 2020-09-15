@@ -3,14 +3,12 @@ import theme from "../theme";
 import Link from "next/link";
 
 const BlogItem = ({ data }) => {
-  const sluggzz = (x) => {
-    console.log(typeof x);
-  };
   return (
     <>
       <Link href="/blogs/[slug]" as={"/blogs/" + data.slug}>
         <div className="blog-item">
           <h2>{data.title}</h2>
+          <h4>{data.createdAt}</h4>
         </div>
       </Link>
       <style jsx>
@@ -19,7 +17,6 @@ const BlogItem = ({ data }) => {
             width: 75%;
             cursor: pointer;
             margin-top: 1rem;
-            // background-color: #e2e2e0;
             background-color: #fefbd8
             padding: 0.5rem;
             text-align: center;
@@ -46,7 +43,7 @@ function Blogs({ allBlogs }) {
         pt={2}
         pb={4}
         mt={3}
-        mb={3}
+        mb={5}
         sx={{
           display: "flex",
           alignItems: "center",

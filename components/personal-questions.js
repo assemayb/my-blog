@@ -1,5 +1,5 @@
 import { Container, Text, Box, Heading, Close } from "theme-ui";
-import { customHeading } from "../theme";
+import theme, { customHeading } from "../theme";
 
 export default function Questions({ setShowQuestions, showCloseButton }) {
   const closeQuestionsSection = () => {
@@ -31,8 +31,8 @@ export default function Questions({ setShowQuestions, showCloseButton }) {
 
         <div className="questions-section">
           <div>
-            <h1> - What languages I am good at?</h1>
-            <h4> Python, Javascript, C++, Golang. </h4>
+            <h1> - What languages <span style={{fontSize: '7px'}}>i think</span> I am good at?</h1>
+            <h4> Python, Javascript, C++ and Golang. </h4>
           </div>
 
           <div>
@@ -57,7 +57,7 @@ export default function Questions({ setShowQuestions, showCloseButton }) {
           <div>
             <h2>- What Language to suggest for beginners?</h2>
             <h4>
-              Javascript, for sure. JS is by far the most powerful and easiest
+              Javascript, for sure. JS is by far the most powerful, prolific and easiest
               language now to build almost any type of applications with.
             </h4>
           </div>
@@ -92,7 +92,6 @@ export default function Questions({ setShowQuestions, showCloseButton }) {
           -webkit-background-clip: text;
           background-clip: text;
         }
-        
       `}</style>
     </>
   );

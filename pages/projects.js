@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
+import Projects from "../components/Projects";
 
 export default function () {
   return (
@@ -8,7 +9,7 @@ export default function () {
         <Head>
           <title>Projects</title>
         </Head>
-        <h1>my projects</h1>
+        <Projects />
       </Layout>
     </>
   );

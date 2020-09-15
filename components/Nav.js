@@ -15,7 +15,7 @@ export default function Nav() {
             <NavLink p={4}>Projects</NavLink>
           </Link>
 
-          <Link href="about-me">
+          <Link href="/about-me">
             <NavLink p={4}>About Me</NavLink>
           </Link>
         </Flex>
@@ -26,7 +26,8 @@ export default function Nav() {
             font-size: 2rem;
             font-weight: bold;
             font-family: ${theme.fonts.body};
-            margin-bottom: 5rem;
+            margin-bottom: 6rem;
+            margin-top: 1rem;
           }
         `}
       </style>

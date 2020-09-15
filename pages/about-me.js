@@ -50,6 +50,8 @@ export default function About() {
             margin: 1rem;
             border-radius: 90px;
             border-left-top-radius: 60px;
+            // font-size: 200px;
+            // font-family: ${theme.fonts.monospace};
           }
           .info p {
             font-size: 25px;
