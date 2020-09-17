@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Link from "next/link";
 import Nav from "./Nav";
 
 export default function Layout({ children }) {
@@ -16,16 +15,15 @@ export default function Layout({ children }) {
           {children}
         </div>
       </main>
-
-      <div>{/* For the Footer */}</div>
       <style jsx>
         {`
           .container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 3rem;
-            margin-top: 1rem;
+            margin-top: 0.5rem;
+            margin-left: 4rem;
+            margin-right: 4rem;
           }
         `}
       </style>

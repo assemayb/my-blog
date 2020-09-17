@@ -28,7 +28,7 @@ export default function Blog({ data, content }) {
             margin-bottom: 5rem;
             margin-left: 4rem;
             margin-right: 4rem;
-            padding: 5rem;
+            padding: 3rem;
             background-color: white;
             border-radius: 6px;
             background-color: #2f4f4f;
@@ -37,13 +37,13 @@ export default function Blog({ data, content }) {
             font-size: 25px;
           }
           .blog-content:hover {
-            transition: 0.4s;
+            transition: 0.6s;
             background: linear-gradient(120deg, black, blue);
             text-shadow: none;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;
             background-clip: text;
-            border: 10px solid black; 
+            border: 5px solid black; 
           }
         `}
       </style>
@@ -52,7 +52,6 @@ export default function Blog({ data, content }) {
 }
 
 export async function getStaticPaths() {
-  // const allBlogsSlugs = Blogs.map((blog) => blog.slug);
   const allBlogsSlugs = fs.readdirSync("posts").map(blog => blog.replace(".md", ""))
   const paths = allBlogsSlugs.map((slug) => ({
     params: {

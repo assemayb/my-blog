@@ -1,0 +1,9 @@
+
+{
+    "forms": {
+        "contactForm": {
+        "name": "Contact Form",
+        "actions": [{ "type": "email", "to": "assem.saad12@yahoo.com" }]
+        }
+    }
+}

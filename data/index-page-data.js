@@ -1,7 +1,7 @@
 const Blogs = [
   {
     title: "Blog Zero",
-    createdAt: new Date(Date.now()).toString().slice(0, 15),
+    createdAt: "Thu Sep 17 2020",
     slug: "blog-zero",
   },
 ];

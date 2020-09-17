@@ -8,7 +8,7 @@ export default function Questions({ setShowQuestions, showCloseButton }) {
   return (
     <>
       <Container
-        bg="blue"
+        bg="#93c4c9"
         p={4}
         mt={3}
         mb={3}

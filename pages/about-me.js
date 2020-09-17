@@ -12,7 +12,8 @@ export default function About() {
       </Head>
       <div className="main-container">
         <Container
-          bg="blue"
+        className="x"
+          bg="#93C4C9"
           p={4}
           mt={3}
           mb={3}
@@ -46,22 +47,20 @@ export default function About() {
             margin-top: 1rem;
           }
           .info {
-            padding: 1rem;
-            margin: 1rem;
+            padding: 0.2rem;
+            margin: 0.2rem;
             border-radius: 90px;
-            border-left-top-radius: 60px;
-            // font-size: 200px;
-            // font-family: ${theme.fonts.monospace};
+            // border-left-top-radius: 60px;
           }
           .info p {
-            font-size: 25px;
+            font-size: 26px;
             font-family: ${theme.fonts.heading};
             text-align: center;
-            font-weight: bold
+            font-weight: bold;
           }
           .info:hover {
             transition: 0.6s;
-            background: linear-gradient(90deg, SpringGreen, black, SpringGreen);
+            background: linear-gradient(120deg, darkGreen, black, darkGreen);
             text-shadow: none;
             -webkit-text-fill-color: transparent;
             -webkit-background-clip: text;

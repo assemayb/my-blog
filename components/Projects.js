@@ -102,7 +102,7 @@ export default function Projects() {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 80%;
           }
         `}
       </style>

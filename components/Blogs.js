@@ -55,7 +55,7 @@ function Blogs({ allBlogs }) {
         <div className="blogs-container">
           <h1
             style={{
-              fontSize: "50px",
+              fontSize: "40px",
               color: "cadetblue",
               fontFamily: "monospace",
             }}
