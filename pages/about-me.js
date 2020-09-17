@@ -25,6 +25,7 @@ export default function About() {
             borderTopLeftRadius: "40px",
             borderTopRightRadius: "40px",
             position: "relative",
+            width: "90%",
           }}
         >
           <div className="info">
@@ -50,10 +51,9 @@ export default function About() {
             padding: 0.2rem;
             margin: 0.2rem;
             border-radius: 90px;
-            // border-left-top-radius: 60px;
           }
           .info p {
-            font-size: 26px;
+            font-size: 23px;
             font-family: ${theme.fonts.heading};
             text-align: center;
             font-weight: bold;

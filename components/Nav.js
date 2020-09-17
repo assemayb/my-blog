@@ -23,11 +23,11 @@ export default function Nav() {
       <style jsx>
         {`
           .flex {
-            font-size: 2rem;
+            font-size: 1.7rem;
             font-weight: bold;
             font-family: ${theme.fonts.body};
-            margin-bottom: 6rem;
-            margin-top: 1rem;
+            margin-bottom: 3.5rem;
+            margin-top: 1.5rem;
           }
         `}
       </style>

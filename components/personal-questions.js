@@ -14,6 +14,7 @@ export default function Questions({ setShowQuestions, showCloseButton }) {
         mb={3}
         sx={{
           display: "flex",
+          width: "90%",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",

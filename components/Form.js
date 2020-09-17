@@ -19,7 +19,7 @@ export default function Form() {
       <form className="inputForm" onSubmit={handleSubmit}>
         <h2>Write to me if you want!</h2>
         <Field
-          style={{ width: "450px" ,marginBottom: "1rem" }}
+          style={{ width: "500px" ,marginBottom: "1rem" }}
           label="Email"
           id="email"
           type="email"
@@ -32,7 +32,7 @@ export default function Form() {
           m={1}
           id="message"
           name="message"
-          placeholder="Write a Message to me...."
+          placeholder="Write a message...."
           rows={7}
         />
         <ValidationError
@@ -52,7 +52,7 @@ export default function Form() {
       <style jsx>
         {`
           h2 {
-            font-size: 35px;
+            font-size: 30px;
             color: #2f4f4f;
             font-family: monospace;
           }

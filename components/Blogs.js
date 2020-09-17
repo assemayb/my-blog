@@ -74,7 +74,7 @@ function Blogs({ allBlogs }) {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
+            width: 90%;
           }
         `}
       </style>
